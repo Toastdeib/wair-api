@@ -1,0 +1,5 @@
+**/node_modules
+**/logs
+*.swp
+cache.json
+notes.txt

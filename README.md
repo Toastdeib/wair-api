@@ -175,6 +175,8 @@ Logs out and ends the session for the provided user ID, if the provided token is
 - HTTP 404 (NOT FOUND) - Returned if the provided ID doesn't exist in the database.
 - HTTP 500 (SERVER ERROR) - Returned if a database error occurs.
 
+[Back to top](#table-of-contents)
+
 ## Events APIs
 
 **Note**: All API calls under the `/events` path require a valid session.
@@ -430,6 +432,8 @@ Removes the provided attendee from the provided event. If the event ID is invali
 - HTTP 404 (NOT FOUND) - Returned if the event ID is invalid.
 - HTTP 500 (SERVER ERROR) - Returned if a database error occurs.
 
+[Back to top](#table-of-contents)
+
 ## Friend List APIs
 
 **Note**: All API calls under the `/friendlist` path require a valid session.
@@ -570,6 +574,8 @@ As currently specced out, this operation will **also** destroy all message histo
 - HTTP 404 (NOT FOUND) - Returned if the provided ID doesn't exist or isn't on the logged-in user's friend list.
 - HTTP 500 (SERVER ERROR) - Returned if a database error occurs.
 
+[Back to top](#table-of-contents)
+
 ## Ignore List APIs
 
 **Note**: All API calls under the `/ignorelist` path require a valid session.
@@ -702,6 +708,8 @@ Removes the provided user ID from the logged-in user's ignore list. If the ID do
 - HTTP 401 (UNAUTHORIZED) - Returned if the authentication token is expired.
 - HTTP 404 (NOT FOUND) - Returned if the provided ID doesn't exist or isn't on the logged-in user's ignore list.
 - HTTP 500 (SERVER ERROR) - Returned if a database error occurs.
+
+[Back to top](#table-of-contents)
 
 ## Messages APIs
 
@@ -862,6 +870,8 @@ Deletes the provided message ID. If the message ID doesn't exist or the logged-i
 - HTTP 404 (NOT FOUND) - Returned if the provided message ID doesn't exist.
 - HTTP 500 (SERVER ERROR) - Returned if a database error occurs.
 
+[Back to top](#table-of-contents)
+
 ## Location APIs
 
 **Note**: All API calls under the `/location` path require a valid session.
@@ -955,8 +965,12 @@ Fetches location data for all attendees of the provided event ID who aren't in [
 
 TBD
 
+[Back to top](#table-of-contents)
+
 # Glossary
 
 ##### Privacy mode
 
 "Privacy mode" in the context of Wair is a user deciding to temporarily remove themselves from *all* of their events without actually doing so. While privacy mode is enabled, a user's location will not be updated or shared with other attendees of their active events, and they will be unable to view the locations of other users in their active events. When toggled back off, location updating and sharing will resume and the user will once again be able to view the locations of others as well.
+
+[Back to top](#table-of-contents)
